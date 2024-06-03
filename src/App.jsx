@@ -1,5 +1,7 @@
+import BigBox from "./components/big-box/BigBox";
+
 const App = () => {
-	return <h1>Núcleo de la aplicación</h1>;
+	return <BigBox/>
 };
 
 export default App;
