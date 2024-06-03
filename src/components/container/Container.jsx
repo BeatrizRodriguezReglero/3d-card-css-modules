@@ -1,12 +1,16 @@
-const Container=({title, text,icon})=>{
+import style from './container.module.css'
+const Container=({title, text,icon, color, position})=>{
+    const buttonTextColor = 'button_' + color;
     return(
-        <><div>
-                <div>
-                    <img src={`/images/${icon}.svg`} alt="" />
-                </div>
-                <h2>{title}</h2>
-                <p>{text}</p> 
-                <button>Learn More</button>
+        <><div className={`${style.card} ${style[color]} ${style[position]}`}>
+                
+                 <img className={style.icon} src={`./images/${icon}.svg`} alt={`${icon} icon`} />
+               
+                <h2 className={style.title}>{title}</h2>
+                <p className={style.text}>{text}</p> 
+                <a href='#' className={`${style.button} ${style[buttonTextColor]}`}>
+				Learn More
+			</a>
             </div>
             
 

@@ -1,0 +1,105 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	padding: 48px;
+
+    height: 394px;
+    
+    
+	
+	
+}
+
+@media screen and (min-width: 768px) {
+    
+	.card {
+        width: 307px;
+        
+        
+        
+    }
+}
+.icon {
+	width: 64px;
+	margin-bottom: 35px;
+}
+
+.title {
+    font-family: "Big Shoulders Display";
+	font-size: 40px;
+    margin-bottom: 25px;
+	
+}
+
+.text {
+	font-size: 15px;
+    font-weight: 300;
+	line-height: 27px;
+	
+}
+
+.button {
+	width: 146px;
+	border-radius: 25px;
+	background-color: #fff;
+	color: #E28625;
+	font-size: inherit;
+	line-height: 48px;
+	text-align: center;
+	margin-top:25px;
+}
+
+@media (hover: hover) {
+	.button:hover {
+		background-color: transparent;
+		color: white;
+		outline: 2px solid white;
+	}
+}
+
+
+
+.button_orange {
+	color: #E28625;
+}
+.button_blue {
+	color: #006971;
+}
+.button_green {
+	color: #004140;
+}
+
+.orange {
+	background-color: #E28625;
+}
+
+.blue {
+	background-color:#006971;
+}
+
+.green {
+	background-color:#004140;
+}
+
+.first {
+	border-radius: 8px 8px 0 0;
+}
+.middle {
+	border-radius: 0;
+}
+.last {
+	border-radius: 0 0 8px 8px;
+}
+
+@media screen and (min-width: 768px) {
+    
+	.first {
+		border-radius: 8px 0 0 8px;
+	}
+	.middle {
+		border-radius: 0;
+	}
+	.last {
+		border-radius: 0 8px 8px 0;
+	}
+}
